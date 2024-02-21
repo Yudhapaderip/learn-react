@@ -14,10 +14,10 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="py-5 bg-transparent relative top-0 z-10 w-full">
-      <div className="max-w-[1450px] mx-auto items-center h-20 shadow-md border-2 border-white rounded-md">
+    <nav className="py-5 bg-transparent fixed top-0 z-10 w-full">
+      <div className="max-w-[1450px] mx-auto items-center h-20 shadow-md border-2 bg-white rounded-md">
         <div className="flex flex-col">
-          <div className="flex justify-between my-6 mx-4 text-white">
+          <div className="flex justify-between my-6 mx-4 text-black">
             <Link href={"/"}>
               <div className="flex">Image here</div>
             </Link>

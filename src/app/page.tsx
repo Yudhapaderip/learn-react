@@ -1,15 +1,12 @@
 import Hero from "./components/hero/hero";
-import WimLayout from "./components/layout/wim-layout";
-import Navbar from "./components/navbar/navbar";
+import WimLayout from "./components/layout/about-us";
 
 export default function Home() {
   return (
-    <main className="flex h-screen w-screen">
-      <div className="grid grid-cols-6 grid-rows-5 h-full w-full">
+    <main className="h-screen w-screen overflow-x-hidden">
+      <div className="relative h-full w-full">
         <Hero />
-        <div className="col-start-2 col-end-6">
-          <Navbar />
-        </div>
+        <WimLayout />
       </div>
     </main>
   );

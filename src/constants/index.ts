@@ -1,5 +1,6 @@
 export const navLinks = [
-  { title: "Our Services", route: "#" },
   { title: "About Us", route: "#" },
-  { title: "Contact", route: "#" },
+  { title: "Our Services", route: "#" },
+  { title: "Our Products", route: "/products" },
+  { title: "Contact Us", route: "#" },
 ];
