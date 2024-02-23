@@ -19,7 +19,9 @@ export default function Navbar() {
         <div className="flex flex-col">
           <div className="flex justify-between my-6 mx-4 text-black">
             <Link href={"/"}>
-              <div className="flex">Image here</div>
+              <div id="hero" className="flex">
+                Image here
+              </div>
             </Link>
             <ul className="flex gap-5 items-end max-md:hidden">
               {navLinks.map((link, index) => (
