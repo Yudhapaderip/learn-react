@@ -1,3 +1,4 @@
+import { roboto_condensed } from "@/app/libs/text";
 import Link from "next/link";
 const base_url = "https://jsonplaceholder.typicode.com/posts";
 export default async function AboutUs() {
@@ -5,17 +6,19 @@ export default async function AboutUs() {
   const posts = await response.json();
 
   return (
-    <div
-      id="about-us"
-      className="box-decoration-slice bg-gradient-to-r from-slate-700 to-slate-400 text-white px-2"
-    >
-      <div className="w-full mx-auto max-w-screen-xl p-4 md:p-8">
-        <div className="text-center text-4xl font-extrabold mb-8 md:mb-16">
+    <div id="about-us" className="box-decoration-slice py-10">
+      <div
+        className={
+          (roboto_condensed.className =
+            "w-full mx-auto max-w-screen-2xl p-4 md:p-8 bg-[#1F477B] rounded-md")
+        }
+      >
+        <div className="text-center text-4xl font-extrabold mb-8 md:mb-16 text-white">
           About us content goes here
         </div>
         <div className="flex flex-row md:flex-row">
           <div className="w-full md:w-1/2 mx-0 md:mx-4 mb-8 md:mb-0">
-            <p className="mb-6 md:mb-10">
+            <p className="mb-6 md:mb-10 font-bold text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
               tempore illo accusantium rerum dignissimos veritatis autem
               debitis. Odit, quae explicabo, expedita doloribus minus veniam id
@@ -31,7 +34,7 @@ export default async function AboutUs() {
             </p>
             {/* {posts[1].body} */}
             <Link href={"/about-detail"}>
-              <button className="cursor-pointer bg-black py-4 px-2 rounded-md ">
+              <button className="cursor-pointer bg-slate-100 border-2 border-black shadow-md py-4 px-2 rounded-md ">
                 Know More
               </button>
             </Link>

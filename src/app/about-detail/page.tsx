@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { lato } from "../libs/text";
 import Link from "next/link";
+import Carousel from "../components/carousel-about-detail/carousel";
 
 export default function AboutDetail() {
   return (
@@ -83,86 +84,8 @@ export default function AboutDetail() {
             </div>
           </div>
         </div>
-        <div className=" flex h-[800px] items-center bg-slate-200 flex-col">
-          <div className="carousel flex items-center text-center w-full h-full">
-            <div id="slide1" className="carousel-item relative w-full">
-              <div className="flex flex-col items-center text-center w-full gap-10">
-                <div>
-                  <h1>Meet The Team</h1>
-                </div>
-                <div className="flex flex-row justify-evenly w-full">
-                  <div className="border-4 border-black w-32 h-32"></div>
-                  <div className="border-4 border-black w-32 h-32"></div>
-                  <div className="border-4 border-black w-32 h-32"></div>
-                  <div className="border-4 border-black w-32 h-32"></div>
-                  <div className="border-4 border-black w-32 h-32"></div>
-                  <div className="border-4 border-black w-32 h-32"></div>
-                </div>
-              </div>
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <Link href="#slide4" className="btn btn-circle">
-                  ❮
-                </Link>
-                <Link href="#slide2" className="btn btn-circle">
-                  ❯
-                </Link>
-              </div>
-            </div>
-            <div id="slide2" className="carousel-item relative w-full">
-              <div className="flex flex-row items-center text-center w-full justify-evenly">
-                <div className="border-4 border-red-500 w-32 h-32"></div>
-                <div className="border-4 border-red-500 w-32 h-32"></div>
-                <div className="border-4 border-red-500 w-32 h-32"></div>
-                <div className="border-4 border-red-500 w-32 h-32"></div>
-                <div className="border-4 border-red-500 w-32 h-32"></div>
-                <div className="border-4 border-red-500 w-32 h-32"></div>
-              </div>
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <Link href="#slide1" className="btn btn-circle">
-                  ❮
-                </Link>
-                <Link href="#slide3" className="btn btn-circle">
-                  ❯
-                </Link>
-              </div>
-            </div>
-            <div id="slide3" className="carousel-item relative w-full">
-              <div className="flex flex-row items-center text-center w-full justify-evenly">
-                <div className="border-4 border-green-500 w-32 h-32"></div>
-                <div className="border-4 border-green-500 w-32 h-32"></div>
-                <div className="border-4 border-green-500 w-32 h-32"></div>
-                <div className="border-4 border-green-500 w-32 h-32"></div>
-                <div className="border-4 border-green-500 w-32 h-32"></div>
-                <div className="border-4 border-green-500 w-32 h-32"></div>
-              </div>
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <Link href="#slide2" className="btn btn-circle">
-                  ❮
-                </Link>
-                <Link href="#slide4" className="btn btn-circle">
-                  ❯
-                </Link>
-              </div>
-            </div>
-            <div id="slide4" className="carousel-item relative w-full">
-              <div className="flex flex-row items-center text-center w-full justify-evenly">
-                <div className="border-4 border-blue-500 w-32 h-32"></div>
-                <div className="border-4 border-blue-500 w-32 h-32"></div>
-                <div className="border-4 border-blue-500 w-32 h-32"></div>
-                <div className="border-4 border-blue-500 w-32 h-32"></div>
-                <div className="border-4 border-blue-500 w-32 h-32"></div>
-                <div className="border-4 border-blue-500 w-32 h-32"></div>
-              </div>
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <Link href="#slide3" className="btn btn-circle">
-                  ❮
-                </Link>
-                <Link href="#slide1" className="btn btn-circle">
-                  ❯
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className="h-[1000px] items-center bg-slate-200">
+          <Carousel />
         </div>
       </div>
     </div>
