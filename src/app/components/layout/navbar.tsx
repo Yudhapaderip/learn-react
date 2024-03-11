@@ -21,11 +21,11 @@ export default function Navbar() {
           <Link href={"/"}>
             <div id="hero" className="">
               <Image
-                src={"/logo-gbu-2.svg"}
-                width={250}
-                height={50}
-                alt="logo-gbu-2.svg"
-                className="-my-12 mx-2"
+                src={"/Logo-RnD-VGT.png"}
+                width={200}
+                height={100}
+                alt="Logo-RnD-VGT"
+                className="my-1 mx-2"
               />
             </div>
           </Link>

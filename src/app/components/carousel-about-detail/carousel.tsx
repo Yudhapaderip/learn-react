@@ -13,9 +13,6 @@ export default function Carousel() {
         <div className="flex flex-col w-full gap-10">
           <div>
             <h1>Meet The Team</h1>
-            <button className="border-4 border-bg-black">
-              <h1> kamu meng-klik kali</h1>
-            </button>
           </div>
           <div className="flex flex-row justify-center w-full gap-1 md:gap-10 px-44 md:px-0">
             {Images.slice(0, 5).map((img, id) => (
